@@ -6,7 +6,7 @@
 /* Jumbotron */
 .jumbotron {
     background-image: url(../img/cover1.jpg);
-    background-size: 100%;
+    background-size: cover;
     height: 100%;
     width: 100%;
     position: relative;
@@ -31,9 +31,9 @@
 }
 
 .jumbotron .display-4 {
-    font-weight: 200;
-    font-size: 2.6em;
-    margin-top: 100px;
+    font-weight: 200px;
+    font-size: 2.0em;
+    margin-top: 35px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     margin-bottom: 150px;
 }
@@ -45,8 +45,8 @@
 /* panel info */
 .info-panel {
     background-color: white;
-    padding: 30px;
-    margin-top: -120px;
+    padding: 25px;
+    margin-top: -50px;
     border-radius: 12px;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
 }
@@ -62,4 +62,86 @@
     font-size: 14px;
     font-weight: lighter;
     color: #acacac;
+}
+
+/* Workingspace */
+.workingspace {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.workingspace img {
+    margin-bottom: 20px;
+}
+
+.workingspace h2 {
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.workingspace h2 span {
+    font-weight: 500;
+}
+
+.workingspace p {
+    font-size: 18px;
+    color: #ACACAC;
+    font-weight: 200;
+}
+
+/* Utility */
+.tombol {
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+    .navbar {
+        padding-top: 20px;
+    }
+    
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        margin: auto;
+        margin-bottom: -8px;
+        width: 50%;
+        padding-top: 5px;
+    }
+
+
+    .jumbotron {
+        margin-top: -90px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 5em;
+        margin-top: 150px;
+    }
+
+
+    .workingspace {
+        text-align: left;
+    }
+
+
+    .testimonial p {
+        font-size: 2em;
+    }
+
 }
