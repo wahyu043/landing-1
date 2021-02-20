@@ -1,6 +1,7 @@
 /* navbar */
 .navbar-brand {
     font: 32px Viga;
+    
 }
 
 /* Jumbotron */
@@ -68,16 +69,22 @@
 .workingspace {
     margin-top: 120px;
     text-align: center;
+    margin-left: 120px auto;
+    margin-right: 120px auto;
 }
 
 .workingspace img {
     margin-bottom: 20px;
+    width: 480px;
+    height: 360px;
+    border-radius: 10%;
 }
 
 .workingspace h2 {
     font-size: 52px;
     text-transform: uppercase;
     font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .workingspace h2 span {
@@ -88,6 +95,20 @@
     font-size: 18px;
     color: #ACACAC;
     font-weight: 200;
+}
+
+.contact-info {
+    background-color: #6666;
+    margin-top: 75px;
+    margin-right: 50px auto;
+    margin-left: auto;
+}
+
+.footer-text p {
+    margin-top: 75px;
+    text-align: center;
+    font-weight: lighter;
+    color: black;
 }
 
 /* Utility */
